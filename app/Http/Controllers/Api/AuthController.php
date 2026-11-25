@@ -59,7 +59,7 @@ return response()->json([
 ], 401);
 }
 // Bersihkan token lama (opsional agar 1 perangkat tidak menumpuk banyak token)
-$user->tokens()->delete();
+// $user->tokens()->delete();
 $token = $user->createToken('mobile-app-token')->plainTextToken;
 return response()->json([
 'success' => true,
