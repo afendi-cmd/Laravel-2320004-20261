@@ -19,7 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['https://ronalefendi2320004--3kqfymyadn.expo.app'],
+    'allowed_origins' => ['https://ronalefendi2320004--vv4169rd9l.expo.app'],
 
     'allowed_origins_patterns' => [],
 
