@@ -30,4 +30,4 @@ RUN composer install --no-dev --optimize-autoloader --no-interaction
 RUN mkdir -p storage/framework/sessions storage/framework/views storage/framework/cache bootstrap/cache \
     && chmod -R 775 storage bootstrap/cache
 
-CMD ["sh", "-c", "php artisan config:clear && php artisan route:clear && php artisan serve --host=0.0.0.0 --port=${PORT:-8080}"]
+CMD ["sh", "-c", "php artisan config:cache && php artisan route:cache && php artisan serve --host=0.0.0.0 --port=${PORT:-3000}"]
